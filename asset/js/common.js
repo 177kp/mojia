@@ -692,7 +692,7 @@ layui.define(['jquery'], function(exports) {
 				}
 			},
 			'video': function(str) {
-				return $(str).attr('data-pass') == 1 ? mojia.base64.decode($(str).attr('data-play').substring(3)) : $(str).attr('data-play');
+				return $(str).attr('data-pass') == 1 ? mojia.base64.decode($(str).attr('data-play').substring(3)) + '&next=' + attr('data-next') : $(str).attr('data-play') + '&next=' + attr('data-next');
 			},
 			'iframe': function(str, parse) {
 				mojia.player.logo('iframe', str);
@@ -854,7 +854,7 @@ layui.define(['jquery'], function(exports) {
 							type: 1,
 							id: 'parse',
 							skin: 'mo-open-info mo-bord-round',
-							title: '视频无法播放请切换视频解析接口',
+							title: '无法播放请切换视频接口(非本站，可能有广告！)',
 							shadeClose: true,
 							content: data,
 							btn: false,
