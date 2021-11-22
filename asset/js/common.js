@@ -854,7 +854,7 @@ layui.define(['jquery'], function(exports) {
 							type: 1,
 							id: 'parse',
 							skin: 'mo-open-info mo-bord-round',
-							title: '无法播放请切换视频接口(非本站，可能有广告！)',
+							title: '无法播放请切换解析接口(非本站，可能有广告！)',
 							shadeClose: true,
 							content: data,
 							btn: false,
